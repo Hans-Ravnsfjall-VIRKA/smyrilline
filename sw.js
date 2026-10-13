@@ -1,5 +1,5 @@
 /* Tollroknari offline cache. Bump VERSION when you replace index.html so iPads pick up the new copy. */
-const VERSION = 'tollroknari-v2';
+const VERSION = 'tollroknari-v5';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
