@@ -651,7 +651,7 @@ details[open] summary .arw{transform:rotate(180deg)}
     var free=sum<1;
 
     var html='<div class="hero'+(free?' free':'')+'"><p class="lbl">Tú rindar</p><p class="val">'+fmtKr(sum)+'</p>'+
-             '<p class="sub">'+(free?"Einki at tolla — vel grønu rásina í tollinum.":"Grundað á besta tollfría møguleika.")+'</p></div>';
+             '<p class="sub">'+(free?"Onki at tolla — vel grønu rásina í tollinum.":"Grundað á besta tollfría møguleika.")+'</p></div>';
     html+='<div class="opt-badge"><div class="n">'+best.opt.id+'</div><div><small>Besti tollfríi møguleiki</small><b>'+optLabel(best.opt)+' tollfrítt</b></div></div>';
     html+='<div class="brk"><p class="brk-h">Yvirlit</p>';
     items.forEach(function(it){
@@ -675,7 +675,7 @@ details[open] summary .arw{transform:rotate(180deg)}
     });
     if(cm.length){ html+='<div class="a-card a-warn"><h4>⚠ Yvir mest loyvda nøgd</h4><ul>'; cm.forEach(function(m){html+='<li>'+m+'</li>';}); html+='</ul></div>'; }
     if(free){
-      html+='<div class="a-card a-good"><h4>✓ Einki at tolla</h4><p>Alt er innanfyri tað tollfría við møguleika '+best.opt.id+'.</p></div>';
+      html+='<div class="a-card a-good"><h4>✓ Onki at tolla</h4><p>Alt er innanfyri tað tollfría við møguleika '+best.opt.id+'.</p></div>';
     } else {
       var tips=[];
       items.forEach(function(it){ var tax=best.tax[it.id]||0, rate=rateOf(it.type,it.band); if(tax>0.001)tips.push('Lat <b>'+fmtL(tax)+' '+TYPES[it.type].name.toLowerCase()+'</b> verða eftir — sparir <b>'+fmtKr(tax*rate)+'</b>.'); });
